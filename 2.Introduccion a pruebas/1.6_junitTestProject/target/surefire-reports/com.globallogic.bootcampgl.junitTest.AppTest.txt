@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.globallogic.bootcampgl.junitTest.AppTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.096 sec <<< FAILURE! - in com.globallogic.bootcampgl.junitTest.AppTest
+test()  Time elapsed: 0.025 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: El resultado esta mal : ==> expected: <true> but was: <false>
+	at com.globallogic.bootcampgl.junitTest.AppTest.test(AppTest.java:24)
+

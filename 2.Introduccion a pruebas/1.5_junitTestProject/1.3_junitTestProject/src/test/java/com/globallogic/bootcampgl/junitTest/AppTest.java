@@ -11,8 +11,8 @@ public class AppTest {
 	@Test
 	void test() {
 
-		assertTrue(25 > 12);
-		assertFalse(25 > 27);
+		assertTrue(25 < 12);
+		assertFalse(25 < 27);
 
 	}
 

@@ -8,7 +8,7 @@ public class AppTest {
 	
 	private static final String nameOne = "Natalia";
 	private static final String nameTwo = "Natalia";
-	private static final String nameThree = "Daniela";
+	private static final String nameThree = "Natalia";
 
 
 	@Test

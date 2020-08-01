@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 public class AppTest {
 	
-	private static Long ID = null;
+	private static Long ID = (long) 23;
 
 	@Test
 	@DisplayName(value = "Test null")
@@ -16,7 +16,7 @@ public class AppTest {
 
 		assertNull(ID);
 		
-		ID = (long) 1;
+		ID = null;
 		
 		assertNotNull(ID);
 
