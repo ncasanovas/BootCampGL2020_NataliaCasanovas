@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mockito.example.VehicleCrashTest" time="0.578" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mockito.example.VehicleCrashTest" time="0.595" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="AR"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\GLBootCamp\app\java\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\moona\AppData\Local\Temp\surefire3421642487803355457\surefirebooter5780268603657797408.jar C:\Users\moona\AppData\Local\Temp\surefire3421642487803355457 2020-08-02T11-59-35_657-jvmRun1 surefire6892756122281232975tmp surefire_08329032388975332626tmp"/>
+    <property name="sun.java.command" value="C:\Users\moona\AppData\Local\Temp\surefire8660137547321213624\surefirebooter4454601715506509846.jar C:\Users\moona\AppData\Local\Temp\surefire8660137547321213624 2020-08-03T16-59-48_087-jvmRun1 surefire9142616824454848053tmp surefire_09005223475970925980tmp"/>
     <property name="surefire.test.class.path" value="C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.1_mockito.example\target\test-classes;C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.1_mockito.example\target\classes;C:\Users\moona\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;C:\Users\moona\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\moona\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\moona\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-core\3.4.0\mockito-core-3.4.0.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy\1.10.10\byte-buddy-1.10.10.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.10\byte-buddy-agent-1.10.10.jar;C:\Users\moona\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-junit-jupiter\3.4.0\mockito-junit-jupiter-3.4.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\moona"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\moona\AppData\Local\Temp\surefire3421642487803355457\surefirebooter5780268603657797408.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\moona\AppData\Local\Temp\surefire8660137547321213624\surefirebooter4454601715506509846.jar"/>
     <property name="sun.boot.class.path" value="C:\GLBootCamp\app\java\jre\lib\resources.jar;C:\GLBootCamp\app\java\jre\lib\rt.jar;C:\GLBootCamp\app\java\jre\lib\sunrsasign.jar;C:\GLBootCamp\app\java\jre\lib\jsse.jar;C:\GLBootCamp\app\java\jre\lib\jce.jar;C:\GLBootCamp\app\java\jre\lib\charsets.jar;C:\GLBootCamp\app\java\jre\lib\jfr.jar;C:\GLBootCamp\app\java\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -61,6 +61,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="WhenNoCrashNoValueThenOk" classname="mockito.example.VehicleCrashTest" time="0.549"/>
-  <testcase name="WhenCrashAndCorrectValueThenOk" classname="mockito.example.VehicleCrashTest" time="0.022"/>
+  <testcase name="WhenNoCrashNoValueThenOk" classname="mockito.example.VehicleCrashTest" time="0.565"/>
+  <testcase name="WhenCrashAndCorrectValueThenOk" classname="mockito.example.VehicleCrashTest" time="0.023"/>
 </testsuite>

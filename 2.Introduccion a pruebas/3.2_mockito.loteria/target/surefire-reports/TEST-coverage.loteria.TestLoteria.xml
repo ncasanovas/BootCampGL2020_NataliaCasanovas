@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="coverage.loteria.TestLoteria" time="0.585" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria\target\test-classes;C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria\target\classes;C:\Users\moona\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;C:\Users\moona\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\moona\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\moona\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-core\3.4.0\mockito-core-3.4.0.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy\1.10.10\byte-buddy-1.10.10.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.10\byte-buddy-agent-1.10.10.jar;C:\Users\moona\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-junit-jupiter\3.4.0\mockito-junit-jupiter-3.4.0.jar;"/>
+    <property name="java.vm.vendor" value="Azul Systems, Inc."/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://www.azulsystems.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\GLBootCamp\app\java\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\moona\AppData\Local\Temp\surefire844054582656703535\surefirebooter5657540488800033311.jar C:\Users\moona\AppData\Local\Temp\surefire844054582656703535 2020-08-02T12-13-37_959-jvmRun1 surefire2831933132403033998tmp surefire_0270110491047129024tmp"/>
+    <property name="surefire.test.class.path" value="C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria\target\test-classes;C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria\target\classes;C:\Users\moona\.m2\repository\org\slf4j\slf4j-simple\1.7.30\slf4j-simple-1.7.30.jar;C:\Users\moona\.m2\repository\org\slf4j\slf4j-api\1.7.30\slf4j-api-1.7.30.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.2\junit-jupiter-engine-5.6.2.jar;C:\Users\moona\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-engine\1.6.2\junit-platform-engine-1.6.2.jar;C:\Users\moona\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\moona\.m2\repository\org\junit\platform\junit-platform-commons\1.6.2\junit-platform-commons-1.6.2.jar;C:\Users\moona\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.2\junit-jupiter-api-5.6.2.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-core\3.4.0\mockito-core-3.4.0.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy\1.10.10\byte-buddy-1.10.10.jar;C:\Users\moona\.m2\repository\net\bytebuddy\byte-buddy-agent\1.10.10\byte-buddy-agent-1.10.10.jar;C:\Users\moona\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;C:\Users\moona\.m2\repository\org\mockito\mockito-junit-jupiter\3.4.0\mockito-junit-jupiter-3.4.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\moona"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\GLBootCamp\app\java\jre"/>
+    <property name="basedir" value="C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="jdk.vendor.version" value="Zulu 8.46.0.19-CA-win64"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\moona\AppData\Local\Temp\surefire844054582656703535\surefirebooter5657540488800033311.jar"/>
+    <property name="sun.boot.class.path" value="C:\GLBootCamp\app\java\jre\lib\resources.jar;C:\GLBootCamp\app\java\jre\lib\rt.jar;C:\GLBootCamp\app\java\jre\lib\sunrsasign.jar;C:\GLBootCamp\app\java\jre\lib\jsse.jar;C:\GLBootCamp\app\java\jre\lib\jce.jar;C:\GLBootCamp\app\java\jre\lib\charsets.jar;C:\GLBootCamp\app\java\jre\lib\jfr.jar;C:\GLBootCamp\app\java\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_252-b14"/>
+    <property name="user.name" value="moona"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\GLBootCamp\app\java\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\moona\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://www.azulsystems.com/support/"/>
+    <property name="java.io.tmpdir" value="C:\Users\moona\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_252"/>
+    <property name="user.dir" value="C:\GLBootCamp\repo\BootCampGL2020_NataliaCasanovas\2.Introduccion a pruebas\3.2_mockito.loteria"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\GLBootCamp\app\java\jre\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\moona\bin;C:\GLBootCamp\app\Git\mingw64\bin;C:\GLBootCamp\app\Git\usr\local\bin;C:\GLBootCamp\app\Git\usr\bin;C:\GLBootCamp\app\Git\usr\bin;C:\GLBootCamp\app\Git\mingw64\bin;C:\GLBootCamp\app\Git\usr\bin;C:\Users\moona\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\dotnet;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\GLBootCamp\app\Git\cmd;C:\Users\moona\AppData\Local\Microsoft\WindowsApps;C:\Users\moona\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\moona\AppData\Roaming\npm;C:\Program Files\Docker Toolbox;C:\GLBootCamp\app\java\bin;C:\GLBootCamp\app\apache-maven-3.6.3\bin;C:\GLBootCamp\app\Git\usr\bin\vendor_perl;C:\GLBootCamp\app\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Azul Systems, Inc."/>
+    <property name="java.vm.version" value="25.252-b14"/>
+    <property name="java.ext.dirs" value="C:\GLBootCamp\app\java\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="CartonGenerator" classname="coverage.loteria.TestLoteria" time="0.579">
+    <failure message="expected: &lt;Carton: &gt; but was: &lt;coverage.loteria.model.CartonGenerator@6f43c82&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Carton: > but was: <coverage.loteria.model.CartonGenerator@6f43c82>
+	at coverage.loteria.TestLoteria.CartonGenerator(TestLoteria.java:27)
+]]></failure>
+  </testcase>
+</testsuite>
