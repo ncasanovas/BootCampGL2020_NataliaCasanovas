@@ -1,6 +1,10 @@
 package mockito.example.services;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -12,6 +16,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import mockito.example.services.impl.BasicOperationsServiceImpl;
 import mockito.example.services.impl.CalculatorServiceImpl;
+import mockito.example.services.impl.DataServiceImpl;
 
 @ExtendWith(MockitoExtension.class)
 public class CalculatorServiceTest {
@@ -22,17 +27,22 @@ public class CalculatorServiceTest {
 	@Mock
 	private BasicOperationsService basicOperationsService;
 
+	
+	
 	@Test
-	@DisplayName("Ejercicio 3.9")
+	@DisplayName("Ejercicio 3.10")
 	void testSpy() {
 
-		BasicOperationsService basicOperationsService = new BasicOperationsServiceImpl();
-		BasicOperationsService spy = Mockito.spy(basicOperationsService);
-		calculatorServiceImpl.setBasicOperationsService(spy);
+		DataServiceImpl dataServiceImpl = new DataServiceImpl();
+		DataServiceImpl spy = Mockito.spy(dataServiceImpl);
+		calculatorServiceImpl.setDataService(spy);
 
-		calculatorServiceImpl.calculateSum(3, 5);
+		when(spy.getListOfNumbers()).thenReturn( new int[] {1, 3, 7, 20, 25});
 
-		verify(spy).add(3.0, 5.0);
+		spy.setListOfNumbers(new int [] {2, 8});
+		
+		assertTrue(spy.getListOfNumbers().length == 5);
+		
 	}
 
 }
