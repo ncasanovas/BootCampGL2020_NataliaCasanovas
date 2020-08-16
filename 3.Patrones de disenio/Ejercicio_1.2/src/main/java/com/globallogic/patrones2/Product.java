@@ -1,15 +1,15 @@
 package com.globallogic.patrones2;
 
-public class Currency {
+public class Product {
 
 	private String name;
-	private static Currency instance = new Currency();
+	private static Product instance = new Product();
 
-	private Currency() {
-		this.name = "ARS";
+	Product() {
+		this.name = "Clavos";
 	}
 
-	public static Currency getInstance() {
+	public static Product getInstance() {
 		return instance;
 	}
 
