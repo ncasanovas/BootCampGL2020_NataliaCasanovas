@@ -4,14 +4,15 @@ import static org.junit.Assert.assertSame;
 
 import org.junit.Test;
 
-public class AppTest {
+public class CurrencyTest {
 
 	static Currency currency;
-	
+
 	@Test
-	void testSingleton() {
-		Currency instance1 = currency.getInstance();
-		Currency instance2 = currency.getInstance();
+	void testCurrency() {
+
+		Currency instance1 = Currency.getInstance();
+		Currency instance2 = Currency.getInstance();
 
 		assertSame(instance1, instance2);
 	}

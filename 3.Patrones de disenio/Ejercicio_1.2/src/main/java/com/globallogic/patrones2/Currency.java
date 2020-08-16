@@ -3,13 +3,13 @@ package com.globallogic.patrones2;
 public class Currency {
 	
 	 private String name;
-	 Currency instance = new Currency();
+	 private static Currency instance = new Currency();
 	 
 	 private Currency() {
 		  this.name = "ARS";
 	 }
 	 
-	 public Currency getInstance() {
+	 public static Currency getInstance() {
 		 return instance;
 	 }
 
