@@ -8,6 +8,7 @@ import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
 
+
 public class HibernateConfig {
 
 	private static SessionFactory sessionFactory = null;
@@ -34,8 +35,9 @@ public class HibernateConfig {
 
 				configuration.setProperties(settings);
 
+				configuration.addAnnotatedClass(Plato.class);
+				
 				configuration.addAnnotatedClass(Menu.class);
-
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 
 						.applySettings(configuration.getProperties()).build();

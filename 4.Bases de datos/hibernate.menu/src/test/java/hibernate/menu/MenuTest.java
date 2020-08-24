@@ -1,62 +1,64 @@
 package hibernate.menu;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
-import hibernate.example.ExampleApplication;
 import hibernate.example.Menu;
-import hibernate.example.MenuDao;
+import hibernate.example.Plato;
+
 
 public class MenuTest {
 
-	Logger LOGGER = LoggerFactory.getLogger(ExampleApplication.class);
-	MenuDao menuDao = new MenuDao();
 
-	@Test
-	void MenuCreateTest() {
+	private Menu menu;
+	private static final String NOMBRE = "Milanesa";
+	private static final String DESCRIPCION = "Plato milanesa";
+	private static final Double PRECIO = 22.2;
+	private static final int ID = 0;
+	private List<Plato> platos;
+	private Plato plato;
 
-		menuDao.createMenu(new Menu(0, "Sorrentinos", "Deliciosos sorrentinos a los cuatro quesos", 450.00));
-		menuDao.createMenu(new Menu(0, "Hamburguesa completa",
-				"Hamburguesa con queso cheddar, lechuga, cebollas caramelizadas y barbacoa.", 650.00));
-
-		List<Menu> menus = menuDao.getMenus();
-		LOGGER.info("Todos los : {}", menus);
+	@BeforeEach
+	void setUp() {
+		this.platos = new ArrayList<>();
+		this.plato = new Plato(ID, NOMBRE, DESCRIPCION, PRECIO, null);
+		platos.add(plato);
+		this.menu = new Menu(ID, NOMBRE, platos);
 	}
-
+	
 	@Test
-	void MenuGetMenuTest() {
-
-		menuDao.getMenus("Sorrentinos", "Deliciosos sorrentinos a los cuatro quesos", 450.00);
-
-		List<Menu> menus = menuDao.getMenus();
-		LOGGER.info("Todos los : {}", menus);
-	}
-
-	@Test
-	void MenUpdateTest() {
-
-		menuDao.createMenu(new Menu(0, "Sorrentinos", "Deliciosos sorrentinos a los cuatro quesos", 450.00));
-			
-		List<Menu> menus = menuDao.getMenus();
-
-		Menu menuCorregido = menus.get(0);
-		menuCorregido.setPrecio(650.00);
-		menuDao.updateMenu(menuCorregido);
+	void getterSetterIDTest( ) {
 		
-		LOGGER.info("Menu corregidos: {}", menuDao.getMenus());
+		menu.setId(ID);
+		assertEquals(ID, menu.getId());
+		
+	}
+	
+	@Test
+	void getterSetterNombreTest( ) {
+		
+		menu.setNombre(NOMBRE);
+		assertEquals(NOMBRE, menu.getNombre());
+		
+	}
+	
+	@Test
+	void getterSetterPlatosTest( ) {
+		
+		menu.setPlatos(platos);;
+		assertEquals(platos, menu.getPlatos());
+		
 	}
 
 	@Test
-	void MenuRemoveMenuTest() {
-
-		menuDao.createMenu(new Menu(0, "Hamburguesa completa",
-				"Hamburguesa con queso cheddar, lechuga, cebollas caramelizadas y barbacoa.", 650.00));
-		
-        menuDao.removeMenu(menuDao.getMenus("Hamburguesa completa","Hamburguesa con queso cheddar, lechuga, cebollas caramelizadas y barbacoa.", 650.00).get(1));
-        LOGGER.info("Todos los: {}",menuDao.getMenus());
-      
+	public void toStringTest() {
+		String expected = "Menu [id=0, nombre=Milanesa, platos=[Plato [id=0, nombre=Milanesa, descripcion=Plato milanesa, precio=22.2]]]";
+		String string = menu.toString();
+		assertEquals(expected, string);
 	}
 }
